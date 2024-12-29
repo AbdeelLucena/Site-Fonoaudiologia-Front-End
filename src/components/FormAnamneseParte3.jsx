@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-// eslint-disable-next-line react/prop-types
+
 const FormAnamneseParte3 = ({ onNext, onPrev }) => {
   const [formData, setFormData] = useState({
     sintomasAuditivos: [],
@@ -14,8 +14,8 @@ const FormAnamneseParte3 = ({ onNext, onPrev }) => {
     const { name, value, checked } = e.target;
     setFormData((prevData) => {
       const updatedArray = checked
-        ? [...prevData[name], value] // Adiciona o valor se estiver checado
-        : prevData[name].filter((item) => item !== value); // Remove o valor se não estiver checado
+        ? [...prevData[name], value] 
+        : prevData[name].filter((item) => item !== value); 
       return { ...prevData, [name]: updatedArray };
     });
   };
@@ -49,7 +49,7 @@ const FormAnamneseParte3 = ({ onNext, onPrev }) => {
           />
           Voz muda depois do uso
         </label>
-        {/* Adicione mais opções aqui */}
+       
       </fieldset>
 
       <fieldset>
@@ -72,7 +72,7 @@ const FormAnamneseParte3 = ({ onNext, onPrev }) => {
           />
           “Bolo” na garganta
         </label>
-        {/* Adicione mais opções aqui */}
+        
       </fieldset>
 
       <fieldset>
@@ -95,7 +95,7 @@ const FormAnamneseParte3 = ({ onNext, onPrev }) => {
           />
           Demanda vocal excessiva
         </label>
-        {/* Adicione mais opções aqui */}
+       
       </fieldset>
 
       <fieldset>
@@ -118,7 +118,7 @@ const FormAnamneseParte3 = ({ onNext, onPrev }) => {
           />
           Baixa umidade do ar
         </label>
-        {/* Adicione mais opções aqui */}
+       
       </fieldset>
 
       <fieldset>
@@ -141,7 +141,7 @@ const FormAnamneseParte3 = ({ onNext, onPrev }) => {
           />
           Fala muito
         </label>
-        {/* Adicione mais opções aqui */}
+       
       </fieldset>
 
       <button type="button" onClick={onPrev}>Voltar</button>

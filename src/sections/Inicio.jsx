@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../sections/Navbar';
-import Main from '../sections/Main'; // Certifique-se de que isso está correto
+import Main from '../sections/Main'; 
 import capa from '../img/capa.svg';
 
 function Inicio() {
@@ -12,9 +12,7 @@ function Inicio() {
   };
 
   return (
-    <div>
-    
-      <Navbar /> {/* Verifique se esta linha aparece apenas uma vez */}
+    <div> 
       <section className="text-gray-600 body-font bg-gradient-to-b from-[#E9F9EA] to-white">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -50,7 +48,7 @@ function Inicio() {
           </p>
         </div>
       </section>
-      <Main /> {/* Main deve ficar abaixo da seção */}
+      <Main /> 
     </div>
   );
 }

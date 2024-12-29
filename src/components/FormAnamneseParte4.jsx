@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-// eslint-disable-next-line react/prop-types
+
 const FormAnamneseParte4 = ({ onNext, onPrev }) => {
   const [formData, setFormData] = useState({
     tratamentosAnteriores: "",

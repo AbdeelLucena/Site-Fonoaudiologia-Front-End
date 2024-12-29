@@ -35,7 +35,7 @@ function Signup() {
         <div className="min-h-screen flex items-center justify-center bg-[#E9F9EA]">
   <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row w-full max-w-4xl">
     
-    {/* Left side - Greeting and Illustration */}
+    
     <div className="w-full md:w-1/2 bg-[#0B71AB] p-8 rounded-t-2xl md:rounded-l-2xl text-white flex flex-col justify-center items-center">
       <h1 className="text-4xl font-bold mb-4 pt-10 ">Olá amigo!</h1>
       <p className="mb-6 text-lg text-center">Cadastre-se com os seus dados pessoais para obter todos os recursos do site!</p>
@@ -52,7 +52,7 @@ function Signup() {
       />
     </div>
 
-    {/* Right side - Signup form */}
+    
     <div className="w-full md:w-1/2 p-8">
       <h2 className="text-3xl text-center font-semibold mb-6">Paciente</h2>
 

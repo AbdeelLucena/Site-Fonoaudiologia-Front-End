@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-// eslint-disable-next-line react/prop-types
+
 const FormAnamneseParte2 = ({ onNext, onPrev }) => {
   const [formData, setFormData] = useState({
     motivoConsulta: "",
@@ -19,13 +19,13 @@ const FormAnamneseParte2 = ({ onNext, onPrev }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Verificar se todos os campos obrigatórios foram preenchidos
+    
     if (!formData.motivoConsulta || !formData.historiaDisfonia || !formData.sugestaoProcura) {
       alert("Por favor, preencha todos os campos obrigatórios.");
       return;
     }
 
-    // Chama a função `onNext` para passar os dados para o próximo passo
+   
     onNext(formData);
   };
 

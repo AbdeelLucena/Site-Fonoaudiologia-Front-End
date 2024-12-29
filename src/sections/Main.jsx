@@ -1,6 +1,6 @@
 import React from 'react'; 
-import image from '../img/image 33.png'; // Ajuste o caminho da imagem conforme sua estrutura de pastas
-import secondImage from '../img/Group 15768.png'; // Substitua pelo caminho da segunda imagem
+import image from '../img/image 33.png'; 
+import secondImage from '../img/Group 15768.png'; 
 
 function Main() {
   return (
@@ -14,7 +14,7 @@ function Main() {
           </p>
         </section>
         
-        {/* Adicionando a primeira imagem aqui */}
+        
         <div className="flex justify-center items-center mb-10">
           <div className="w-64 h-64">
             <img 
@@ -33,16 +33,16 @@ function Main() {
           </p>
         </section>
 
-        {/* Adicionando espaçamento maior antes da segunda imagem e texto */}
-        <div className="mt-80 flex mb-10"> {/* Aumentei a margem superior para 40 */}
-          <div className="flex-shrink-0 w-[500px] h-[500px] mr-4"> {/* Aumentando para 500px por 500px */}
+       
+        <div className="mt-80 flex mb-10"> 
+          <div className="flex-shrink-0 w-[500px] h-[500px] mr-4"> 
             <img 
               src={secondImage} 
               alt="Tratamento" 
               className="object-contain w-full h-full"
             />
           </div>
-          <div className="text-left"> {/* Alinhamento do texto à esquerda */}
+          <div className="text-left">
             <h1 className="text-2xl font-bold mb-2">O que é um Fonoaudiólogo afinal?</h1>
             <h2 className="text-lg text-gray-700">
               Um fonoaudiólogo é um profissional de saúde especializado na prevenção, diagnóstico e tratamento de distúrbios relacionados à comunicação, audição, voz, linguagem, fala, e deglutição. Eles trabalham com pessoas de todas as idades, desde bebês até idosos, abordando uma ampla gama de condições que podem afetar a capacidade de falar, ouvir, compreender, e interagir de forma eficaz.

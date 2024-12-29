@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-// eslint-disable-next-line react/prop-types
+
 const FormAnamneseParte5 = ({ onPrev }) => {
   const [formData, setFormData] = useState({
     antecedentesFamiliares: "",
@@ -18,7 +18,7 @@ const FormAnamneseParte5 = ({ onPrev }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aqui você pode enviar os dados ou apenas finalizar a ação
+  
     alert("Formulário concluído!");
     console.log("Dados finais:", formData);
   };
